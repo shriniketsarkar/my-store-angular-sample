@@ -3,25 +3,34 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel='stylesheet' type='text/css' href='./lib/css/example-smart-app.css'>
-    <link rel='stylesheet' type='text/css' href='./lib/css/cerner-smart-embeddable-lib-1.4.0.min.css'>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./lib/css/example-smart-app.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./lib/css/cerner-smart-embeddable-lib-1.4.0.min.css"
+    />
 
     <title>My Store - Sample Angular SMART App</title>
   </head>
   <body>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js'></script>
-    <script src='./lib/js/cerner-smart-embeddable-lib-1.4.0.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+    <script src="./lib/js/cerner-smart-embeddable-lib-1.4.0.min.js"></script>
 
     <!-- FHIR Client JS Library -->
-    <script src='./lib/js/fhir-client-v2.4.0.js'></script>
+    <script src="./lib/js/fhir-client-v2.4.0.js"></script>
 
     <!-- Prevent session bleed caused by single threaded embedded browser and sessionStorage API -->
     <!-- https://github.com/cerner/fhir-client-cerner-additions -->
-    <script src='./lib/js/fhir-client-cerner-additions-1.0.0.min.js'></script>
+    <script src="./lib/js/fhir-client-cerner-additions-1.0.0.min.js"></script>
     <script>
       FHIR.oauth2.authorize({
-        'client_id': 'c49ccd60-3272-4baf-b97f-8caf75b348de',
-        'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
+        client_id: "ed793095-1721-4c8c-b7dd-a938b7808045",
+        scope:
+          "patient/Patient.read patient/Observation.read launch online_access openid profile",
       });
     </script>
     <div class="spinner">
